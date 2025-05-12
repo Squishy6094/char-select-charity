@@ -33,9 +33,9 @@ local VOICETABLE_CHARITY = {
 
 local CAPTABLE_CHARITY = {
     normal = smlua_model_util_get_id("charity_cap_geo"),
-    wing = smlua_model_util_get_id("charity_wing_cap_geo"),
-    metal = smlua_model_util_get_id("charity_metal_cap_geo"),
-    metalWing = smlua_model_util_get_id("charity_metal_wing_cap_geo"),
+    wing = smlua_model_util_get_id("charity_cap_wing_geo"),
+    metal = smlua_model_util_get_id("charity_cap_metal_geo"),
+    metalWing = smlua_model_util_get_id("charity_cap_metal_wing_geo"),
 }
 
 local PALETTE_CHARITY = {
