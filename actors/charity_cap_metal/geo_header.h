@@ -1,0 +1,17 @@
+extern const GeoLayout charity_cap_metal_geo[];
+extern Lights1 charity_cap_metal_Metal__METAL__lights;
+extern Lights1 charity_cap_metal_c_ball_lights;
+extern u8 charity_cap_metal_c_metal_faggalicious_rgba16[];
+extern u8 charity_cap_metal_c_ball_ci8[];
+extern u8 charity_cap_metal_c_ball_pal_rgba16[];
+extern Vtx charity_cap_metal_Cap_Metal_mesh_layer_1_vtx_0[288];
+extern Gfx charity_cap_metal_Cap_Metal_mesh_layer_1_tri_0[];
+extern Vtx charity_cap_metal_Cap_Metal_mesh_layer_4_vtx_0[8];
+extern Gfx charity_cap_metal_Cap_Metal_mesh_layer_4_tri_0[];
+extern Gfx mat_charity_cap_metal_Metal__METAL_[];
+extern Gfx mat_revert_charity_cap_metal_Metal__METAL_[];
+extern Gfx mat_charity_cap_metal_c_ball[];
+extern Gfx mat_revert_charity_cap_metal_c_ball[];
+extern Gfx charity_cap_metal_Cap_Metal_mesh_layer_1[];
+extern Gfx charity_cap_metal_Cap_Metal_mesh_layer_4[];
+extern Gfx charity_cap_metal_material_revert_render_settings[];
