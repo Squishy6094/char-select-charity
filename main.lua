@@ -39,14 +39,14 @@ local CAPTABLE_CHARITY = {
 }
 
 local PALETTE_CHARITY = {
-    [PANTS] = {r = 87, g = 71, b = 75},
-    [SHIRT] = {r = 151, g = 34, b = 42},
+    [GLOVES] = {r = 87, g = 71, b = 75},
+    [PANTS] = {r = 77, g = 11, b = 22},
     [CAP] = {r = 90, g = 21, b = 30},
     [SKIN] = {r = 255, g = 224, b = 224},
-    [SHOES] = {r = 180, g = 154, b = 154},
+    [SHOES] = {r = 203, g = 174, b = 174},
     [HAIR] = {r = 255, g = 152, b = 162},
-    [EMBLEM] = {r = 194, g = 166, b = 166},
-    [GLOVES] = {r = 0, g = 0, b = 0}
+    [SHIRT] = {r = 151, g = 34, b = 42},
+    [EMBLEM] = {r = 0, g = 0, b = 0}
 }
 
 if _G.charSelectExists then
