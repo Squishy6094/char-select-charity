@@ -50,9 +50,10 @@ local PALETTE_CHARITY = {
 }
 
 if _G.charSelectExists then
-    CT_CHAR = _G.charSelect.character_add("CHARITY", {"strange cat...bat...bunny thing...", "freakshow central"}, "modeled by wibblus", {r = 255, g = 100, b = 100}, E_MODEL_CHARITY, CT_MARIO, TEX_CHARITY)
+    CT_CHARITY = _G.charSelect.character_add("CHARITY", {"strange cat...bat...bunny thing...", "freakshow central"}, "modeled by wibblus", {r = 255, g = 100, b = 100}, E_MODEL_CHARITY, CT_MARIO, TEX_CHARITY)
     _G.charSelect.character_add_caps(E_MODEL_CHARITY, CAPTABLE_CHARITY)
     _G.charSelect.character_add_palette_preset(E_MODEL_CHARITY, PALETTE_CHARITY)
+    _G.charSelect.character_set_category(CT_CHARITY, "Squishy Workshop")
 
     -- the following must be hooked for each character added
     _G.charSelect.character_add_voice(E_MODEL_CHARITY, VOICETABLE_CHARITY)
