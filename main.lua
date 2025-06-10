@@ -13,21 +13,23 @@ local VOICETABLE_CHARITY = {
     [CHAR_SOUND_OOOF] = 'bonk.ogg',
     [CHAR_SOUND_OOOF2] = {'hurt1.ogg', 'hurt2.ogg', 'hurt3.ogg', 'hurt4.ogg', 'hurt5.ogg', 'hurt6.ogg', 'hurt7.ogg', 'hurt8.ogg'},
     [CHAR_SOUND_DROWNING] = 'diedrown.ogg',
-    [CHAR_SOUND_DYING] = 'silence.ogg',
+    [CHAR_SOUND_DYING] = 'die.ogg',
     [CHAR_SOUND_ON_FIRE] = {'hurt1.ogg', 'hurt2.ogg', 'hurt3.ogg', 'hurt4.ogg', 'hurt5.ogg', 'hurt6.ogg', 'hurt7.ogg', 'hurt8.ogg'},
     [CHAR_SOUND_WAAAOOOW] = {'hurt1.ogg', 'hurt2.ogg', 'hurt3.ogg', 'hurt4.ogg', 'hurt5.ogg', 'hurt6.ogg', 'hurt7.ogg', 'hurt8.ogg'},
 	[CHAR_SOUND_UH] = 'bonk.ogg',
 	[CHAR_SOUND_PANTING] = 'silence.ogg',
-    [CHAR_SOUND_PUNCH_YAH] = 'punch1.ogg',
-	[CHAR_SOUND_PUNCH_WAH] = 'punch2.ogg',
-	[CHAR_SOUND_PUNCH_HOO] = 'punch3.ogg',
+    [CHAR_SOUND_PUNCH_YAH] = 'wah2.ogg',
+	[CHAR_SOUND_PUNCH_WAH] = 'wah2.ogg',
+	[CHAR_SOUND_PUNCH_HOO] = 'hurt1.ogg',
 	[CHAR_SOUND_HRMM] = {'grab1.ogg', 'grab2.ogg', 'grab3.ogg'},
-	[CHAR_SOUND_WAH2] = {'wah1.ogg', 'wah2.ogg', 'wah3.ogg'},
-	[CHAR_SOUND_GROUND_POUND_WAH] = {'wah1.ogg', 'wah2.ogg', 'wah3.ogg'},
-	[CHAR_SOUND_YAH_WAH_HOO] = {'jump1.ogg', 'jump2.ogg', 'jump3.ogg'},
-	[CHAR_SOUND_HOOHOO] = {'silence.ogg'},
-    [CHAR_SOUND_HAHA] = 'squeaker.ogg',
+	[CHAR_SOUND_WAH2] = 'wah2.ogg',
+	[CHAR_SOUND_GROUND_POUND_WAH] = 'bat.ogg',
+	[CHAR_SOUND_YAH_WAH_HOO] = {'bat.ogg'},
+	[CHAR_SOUND_HOOHOO] = {'hurt3.ogg'},
+    [CHAR_SOUND_HAHA] = 'hurt2.ogg',
     [CHAR_SOUND_HAHA_2] = 'silence.ogg',
+    [CHAR_SOUND_YAHOO] = 'squeaker.ogg',
+    [CHAR_SOUND_YAHOO_WAHA_YIPPEE] = 'squeaker.ogg',
 }
 
 
@@ -50,9 +52,10 @@ local PALETTE_CHARITY = {
 }
 
 if _G.charSelectExists then
-    CT_CHAR = _G.charSelect.character_add("CHARITY", {"strange cat...bat...bunny thing...", "freakshow central"}, "modeled by wibblus", {r = 255, g = 100, b = 100}, E_MODEL_CHARITY, CT_MARIO, TEX_CHARITY)
+    CT_CHARITY = _G.charSelect.character_add("CHARITY", {"strange cat...bat...bunny thing...", "freakshow central"}, "modeled by wibblus", {r = 255, g = 100, b = 100}, E_MODEL_CHARITY, CT_MARIO, TEX_CHARITY)
     _G.charSelect.character_add_caps(E_MODEL_CHARITY, CAPTABLE_CHARITY)
     _G.charSelect.character_add_palette_preset(E_MODEL_CHARITY, PALETTE_CHARITY)
+    _G.charSelect.character_set_category(CT_CHARITY, "Squishy Workshop")
 
     -- the following must be hooked for each character added
     _G.charSelect.character_add_voice(E_MODEL_CHARITY, VOICETABLE_CHARITY)
