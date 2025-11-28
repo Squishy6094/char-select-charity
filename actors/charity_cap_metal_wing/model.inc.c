@@ -3,8 +3,8 @@ Lights1 charity_cap_metal_wing_Metal__METAL__lights = gdSPDefLights1(
 	0x0, 0x0, 0x0, 0x28, 0x28, 0x28);
 
 Lights1 charity_cap_metal_wing_c_ball_lights = gdSPDefLights1(
-	0x5F, 0x51, 0x51,
-	0xC2, 0xA6, 0xA6, 0x28, 0x28, 0x28);
+	0x7F, 0x7F, 0x7F,
+	0xFF, 0xFF, 0xFF, 0x28, 0x28, 0x28);
 
 Gfx charity_cap_metal_wing_c_metal_faggalicious_rgba16_aligner[] = {gsSPEndDisplayList()};
 u8 charity_cap_metal_wing_c_metal_faggalicious_rgba16[] = {
@@ -3346,7 +3346,7 @@ Gfx charity_cap_metal_wing_C_M_W__Wings_mesh_layer_4_tri_1[] = {
 
 Gfx mat_charity_cap_metal_wing_Metal__METAL_[] = {
 	gsSPSetGeometryMode(G_TEXTURE_GEN),
-	gsSPCopyLightsPlayerPart(EMBLEM),
+	gsSPCopyLightsPlayerPart(CAP),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, TEXEL1, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, TEXEL1, 0, 0, 0, ENVIRONMENT),
 	gsDPSetAlphaDither(G_AD_NOISE),
