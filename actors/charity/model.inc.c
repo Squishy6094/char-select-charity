@@ -11501,7 +11501,7 @@ Gfx mat_revert_charity_c_body_stripe[] = {
 
 Gfx mat_charity_Metal__METAL_[] = {
 	gsSPSetGeometryMode(G_TEXTURE_GEN),
-	gsSPCopyLightsPlayerPart(EMBLEM),
+	gsSPCopyLightsPlayerPart(CAP),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, TEXEL1, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, TEXEL1, 0, 0, 0, ENVIRONMENT),
 	gsDPSetAlphaDither(G_AD_NOISE),
@@ -11874,9 +11874,9 @@ Gfx charity_Torso_mesh_layer_4[] = {
 };
 
 Gfx charity_Torso_mesh_layer_4_mat_override_Metal__METAL__0[] = {
-	gsSPDisplayList(mat_charity_Metal__METAL_),
+	gsSPDisplayList(mat_charity_c_wing),
 	gsSPDisplayList(charity_Torso_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_charity_Metal__METAL_),
+	gsSPDisplayList(mat_revert_charity_c_wing),
 	gsSPEndDisplayList(),
 };
 
@@ -12020,9 +12020,9 @@ Gfx charity_Left_Ball_DL_mesh_layer_4[] = {
 };
 
 Gfx charity_Left_Ball_DL_mesh_layer_4_mat_override_Metal__METAL__0[] = {
-	gsSPDisplayList(mat_charity_Metal__METAL_),
+	gsSPDisplayList(mat_charity_c_ball),
 	gsSPDisplayList(charity_Left_Ball_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_charity_Metal__METAL_),
+	gsSPDisplayList(mat_revert_charity_c_ball),
 	gsSPEndDisplayList(),
 };
 
@@ -12034,9 +12034,9 @@ Gfx charity_Right_Ball_DL_mesh_layer_4[] = {
 };
 
 Gfx charity_Right_Ball_DL_mesh_layer_4_mat_override_Metal__METAL__0[] = {
-	gsSPDisplayList(mat_charity_Metal__METAL_),
+	gsSPDisplayList(mat_charity_c_ball),
 	gsSPDisplayList(charity_Right_Ball_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_charity_Metal__METAL_),
+	gsSPDisplayList(mat_revert_charity_c_ball),
 	gsSPEndDisplayList(),
 };
 
@@ -12262,9 +12262,9 @@ Gfx charity_Left_Hand_DL_mesh_layer_4[] = {
 };
 
 Gfx charity_Left_Hand_DL_mesh_layer_4_mat_override_Metal__METAL__0[] = {
-	gsSPDisplayList(mat_charity_Metal__METAL_),
+	gsSPDisplayList(mat_charity_c_wing),
 	gsSPDisplayList(charity_Left_Hand_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_charity_Metal__METAL_),
+	gsSPDisplayList(mat_revert_charity_c_wing),
 	gsSPEndDisplayList(),
 };
 
@@ -12290,9 +12290,9 @@ Gfx charity_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_4[] = {
 };
 
 Gfx charity_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_4_mat_override_Metal__METAL__0[] = {
-	gsSPDisplayList(mat_charity_Metal__METAL_),
+	gsSPDisplayList(mat_charity_c_wing),
 	gsSPDisplayList(charity_Right_Hand_Open_Switch_Option_Right_Hand_Open_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_charity_Metal__METAL_),
+	gsSPDisplayList(mat_revert_charity_c_wing),
 	gsSPEndDisplayList(),
 };
 
@@ -12346,9 +12346,9 @@ Gfx charity_Right_Hand_DL_mesh_layer_4[] = {
 };
 
 Gfx charity_Right_Hand_DL_mesh_layer_4_mat_override_Metal__METAL__0[] = {
-	gsSPDisplayList(mat_charity_Metal__METAL_),
+	gsSPDisplayList(mat_charity_c_wing),
 	gsSPDisplayList(charity_Right_Hand_DL_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_charity_Metal__METAL_),
+	gsSPDisplayList(mat_revert_charity_c_wing),
 	gsSPEndDisplayList(),
 };
 
@@ -12374,9 +12374,9 @@ Gfx charity_Left_Hand_Open_Switch_Option_Left_Hand_Switch_mesh_layer_4[] = {
 };
 
 Gfx charity_Left_Hand_Open_Switch_Option_Left_Hand_Switch_mesh_layer_4_mat_override_Metal__METAL__0[] = {
-	gsSPDisplayList(mat_charity_Metal__METAL_),
+	gsSPDisplayList(mat_charity_c_wing),
 	gsSPDisplayList(charity_Left_Hand_Open_Switch_Option_Left_Hand_Switch_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_charity_Metal__METAL_),
+	gsSPDisplayList(mat_revert_charity_c_wing),
 	gsSPEndDisplayList(),
 };
 
@@ -12402,9 +12402,9 @@ Gfx charity_Left_Hand_Peace_Switch_Option_Left_Hand_Peace_mesh_layer_4[] = {
 };
 
 Gfx charity_Left_Hand_Peace_Switch_Option_Left_Hand_Peace_mesh_layer_4_mat_override_Metal__METAL__0[] = {
-	gsSPDisplayList(mat_charity_Metal__METAL_),
+	gsSPDisplayList(mat_charity_c_wing),
 	gsSPDisplayList(charity_Left_Hand_Peace_Switch_Option_Left_Hand_Peace_mesh_layer_4_tri_0),
-	gsSPDisplayList(mat_revert_charity_Metal__METAL_),
+	gsSPDisplayList(mat_revert_charity_c_wing),
 	gsSPEndDisplayList(),
 };
 
@@ -12441,10 +12441,12 @@ Gfx charity_Left_Hand_Switch_Option_Left_Hand_Cap_mesh_layer_4[] = {
 };
 
 Gfx charity_Left_Hand_Switch_Option_Left_Hand_Cap_mesh_layer_4_mat_override_Metal__METAL__0[] = {
-	gsSPDisplayList(mat_charity_Metal__METAL_),
+	gsSPDisplayList(mat_charity_c_wing),
 	gsSPDisplayList(charity_Left_Hand_Switch_Option_Left_Hand_Cap_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_charity_c_wing),
+	gsSPDisplayList(mat_charity_c_ball),
 	gsSPDisplayList(charity_Left_Hand_Switch_Option_Left_Hand_Cap_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_charity_Metal__METAL_),
+	gsSPDisplayList(mat_revert_charity_c_ball),
 	gsSPEndDisplayList(),
 };
 
@@ -12501,10 +12503,12 @@ Gfx charity_Left_Hand_Wing_Switch_Option_Left_Hand_Wing_Cap_mesh_layer_4[] = {
 };
 
 Gfx charity_Left_Hand_Wing_Switch_Option_Left_Hand_Wing_Cap_mesh_layer_4_mat_override_Metal__METAL__0[] = {
-	gsSPDisplayList(mat_charity_Metal__METAL_),
+	gsSPDisplayList(mat_charity_c_wing),
 	gsSPDisplayList(charity_Left_Hand_Wing_Switch_Option_Left_Hand_Wing_Cap_mesh_layer_4_tri_0),
+	gsSPDisplayList(mat_revert_charity_c_wing),
+	gsSPDisplayList(mat_charity_c_ball),
 	gsSPDisplayList(charity_Left_Hand_Wing_Switch_Option_Left_Hand_Wing_Cap_mesh_layer_4_tri_1),
-	gsSPDisplayList(mat_revert_charity_Metal__METAL_),
+	gsSPDisplayList(mat_revert_charity_c_ball),
 	gsSPEndDisplayList(),
 };
 
