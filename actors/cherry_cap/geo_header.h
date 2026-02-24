@@ -1,0 +1,10 @@
+extern const GeoLayout cherry_cap_Normal_Cap_State_Switch_opt1[];
+extern const GeoLayout cherry_cap_geo[];
+extern Lights1 cherry_cap_hat_lights;
+extern u8 cherry_cap_cherry_sweater_i8[];
+extern Vtx cherry_cap_Normal_Cap_DL_mesh_layer_1_vtx_0[87];
+extern Gfx cherry_cap_Normal_Cap_DL_mesh_layer_1_tri_0[];
+extern Gfx mat_cherry_cap_hat[];
+extern Gfx mat_revert_cherry_cap_hat[];
+extern Gfx cherry_cap_Normal_Cap_DL_mesh_layer_1[];
+extern Gfx cherry_cap_material_revert_render_settings[];

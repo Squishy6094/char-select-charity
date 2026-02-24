@@ -1,0 +1,11 @@
+extern const GeoLayout cherry_metal_cap_Metal_Cap_State_Switch_opt1[];
+extern const GeoLayout cherry_metal_cap_geo[];
+extern Lights1 cherry_metal_cap_Metal__CAP__lights;
+extern u8 cherry_metal_cap_Metal_Shade_rgba16_rgba16[];
+extern u8 cherry_metal_cap_Metal_Light_rgba16_rgba16[];
+extern Vtx cherry_metal_cap_Metal_Cap_DL_mesh_layer_1_vtx_0[87];
+extern Gfx cherry_metal_cap_Metal_Cap_DL_mesh_layer_1_tri_0[];
+extern Gfx mat_cherry_metal_cap_Metal__CAP_[];
+extern Gfx mat_revert_cherry_metal_cap_Metal__CAP_[];
+extern Gfx cherry_metal_cap_Metal_Cap_DL_mesh_layer_1[];
+extern Gfx cherry_metal_cap_material_revert_render_settings[];
