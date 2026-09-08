@@ -59,15 +59,15 @@ local function act_wall_climb(m)
             m.vel.y = math.max(m.vel.y - 1, -30)
         end
 
-        if m.input & INPUT_B_PRESSED ~= 0 then
+        if m.input & INPUT_B_PRESSED ~= 0 and e.wallClimbs > 0 then
             play_character_sound(m, CHAR_SOUND_YAH_WAH_HOO)
             m.vel.y = math.max(m.vel.y, 0) + 30
+            e.wallClimbs = e.wallClimbs - 1
             m.actionState = m.actionState + 1
         end
     elseif m.actionState == 2 then
         set_character_animation(m, CHAR_ANIM_DOUBLE_JUMP_RISE)
         m.vel.y = m.vel.y - 3
-        djui_chat_message_create(tostring(m.vel.y))
         if m.vel.y <= -5 then
             m.actionState = 0
         end
