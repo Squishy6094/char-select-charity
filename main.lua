@@ -196,7 +196,7 @@ CT_CHARITY = character_add("Charity",
 "wibblus", {r = 255, g = 100, b = 100}, E_MODEL_CHARITY, CT_MARIO, TEX_CHARITY)
 CT_CHERRY = character_add("Cherry",
 "Cozy sloth girl!",
-"wibblus", { r = 20, g = 220, b = 80 }, E_MODEL_CHERRY, CT_MARIO, TEX_CHERRY)
+"wibblus", { r = 220, g = 20, b = 80 }, E_MODEL_CHERRY, CT_MARIO, TEX_CHERRY)
 
 for i = 1, #PALETTES_CHARITY do
 	character_add_palette_preset(E_MODEL_CHARITY, PALETTES_CHARITY[i], PALETTES_CHARITY[i].name)
